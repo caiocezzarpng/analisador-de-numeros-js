@@ -1,0 +1,67 @@
+body {
+    margin: 0px;
+    background-color: rgb(25, 119, 212);
+    font: normal 18pt Arial;
+    color: whitesmoke;
+  }
+  
+  section {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+  }
+  
+  header {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  div#box {
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+    background-color: white;
+    border-radius: 20px;
+    width: 50vw;
+    color: black;
+  }
+  
+  #box img {
+    width: 10vw;
+    height: 20vh;
+    border-radius: 50%;
+    visibility: hidden;
+    margin: auto;
+    display: flex;
+  }
+  
+  footer {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  input {
+    font-size: 24px;
+  }
+  input[type=button] {
+    text-decoration: none;
+    background-color: #2d95c1;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50px;
+    font-size: 24px;
+  }
+  
+  select {
+    width: 400px;
+ }
+
+  #resultado {
+    text-align: center;
+  }
