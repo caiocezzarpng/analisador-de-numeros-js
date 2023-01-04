@@ -1,13 +1,14 @@
 let numeros = [];
 function analisarNumero() {
   let selectNumero = document.getElementById("select");
-  let num = Number(document.getElementById("num").value);
-  if (num > 100 || num < 1) {
+  let num = document.getElementById("num");
+  if (num.value > 100 || num.value < 1) {
     alert("Por favor, digite um numero válido!");
   } else if (numeros.indexOf(num) != -1) {
     alert("Numero já encontrado na lista!");
   } else {
-    adicionarItem(num, selectNumero);
+    adicionarItem(num.value, selectNumero);
+    num.value = ''
   }
 }
 
@@ -20,7 +21,8 @@ function adicionarItem(num, selectNumero) {
   item.value = `numero ${c}`;
   c++;
   selectNumero.appendChild(item);
-  numeros.push(num);
+  numeros.push(Number(num));
+  num.value = ''
 }
 
 function finalizar() {
